@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nytApp">
+<head>
+  <meta charset="UTF-8">
+  <title>NYT Article Search + ES6 + Webpack</title>
+  <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+  <base href="/">
+</head>
+    
+<body>     
+    <header>        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">NYT Article Search</a>
+                </div>
+                <ul class="nav navbar-nav">
+                   <li class="active"><a data-toggle="tab" href="home">Home</a></li>  
+                   <li><a data-toggle="tab" href="text">Compare Articles</a></li>
+                   <li><a data-toggle="tab" href="contact">Contact</a></li>  
+                   <li><a data-toggle="tab" href="about">About...</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <ui-view></ui-view>
+    </section>    
+</body>
+</html>
